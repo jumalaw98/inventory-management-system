@@ -84,3 +84,28 @@ npm install
 ```bash
 npm run dev
 ```
+
+### The Design Process
+#### Introduction
+
+The purpose of this section is to explain the inclusive design process used in creating an inventory app. Inclusive design aims to create products that are accessible and usable for people with diverse abilities, backgrounds, and cultures. This design process involves considering the needs of a wide range of users and ensuring that everyone can benefit from the product, regardless of their physical, cognitive, or sensory abilities.
+
+#### Design Process
+
+The following are the steps involved in the inclusive design process of the inventory app and these are the [design files](https://www.figma.com/file/1CbMZeGmHGnztb0BFfs9Yd/Inventory-Management-Dashboard?node-id=0%3A1&t=g75j9Uy1QfdCLiC3-1):
+
+- **Conducting user research**: The first step was to understand the needs and requirements of different types of users. This involved conducting surveys, interviews, and focus groups to gather insights and feedback from people with different abilities and backgrounds.
+
+- **Defining user personas**: Based on the user research, we defined user personas to represent different types of users and their needs and preferences. This helped us to prioritize and focus on the most important design considerations.
+
+- **Accessibility testing**: Throughout the design process, we tested the app with users who have different abilities and disabilities to ensure that it was usable and accessible. This involved conducting user testing sessions with people who use assistive technologies, such as screen readers and magnifiers, as well as people with motor, visual, and hearing impairments.
+
+- **Usability testing**: In addition to accessibility testing, we also conducted usability testing to evaluate the overall usability of the app. This involved testing the app with a representative sample of users to see how well they could complete tasks and achieve their goals.
+
+- **Design iterations**: Based on the feedback from accessibility and usability testing, we iterated on the design of the app to address any issues or problems. This involved making changes to the layout, navigation, and functionality of the app to ensure that it was usable and accessible for all users.
+
+- **Final design**: The final design of the inventory app was the result of multiple iterations and refinements, based on the feedback and insights gathered from users throughout the design process.
+
+#### Conclusion
+
+The inclusive design process used in creating the inventory app involved considering the needs and requirements of a wide range of users, and ensuring that everyone can benefit from the product, regardless of their physical, cognitive, or sensory abilities. By conducting user research, defining user personas, and conducting accessibility and usability testing, we were able to create an app that is accessible and usable for all users.
