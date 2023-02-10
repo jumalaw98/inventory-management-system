@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 import { Refine } from "@pankod/refine-core";
 import {
@@ -12,11 +13,10 @@ import "@pankod/refine-antd/dist/reset.css";
 import dataProvider from "@pankod/refine-simple-rest";
 import { AntdInferencer } from "@pankod/refine-inferencer/antd";
 import routerProvider from "@pankod/refine-react-router-v6";
-import { ColorModeContextProvider } from "contexts";
+import LoginForm from "./pages/auth/LoginForm";
 
 function App() {
   return (
-    <ColorModeContextProvider>
       <Refine
         dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
         notificationProvider={notificationProvider}
@@ -25,17 +25,16 @@ function App() {
         catchAll={<ErrorComponent />}
         resources={[
           {
-            name: "posts",
+            name: "post",
             list: AntdInferencer,
-            edit: AntdInferencer,
-            show: AntdInferencer,
-            create: AntdInferencer,
-            canDelete: true,
+          },
+          {
+            name: "Dashboard",
+            list: LoginForm,
           },
         ]}
         routerProvider={routerProvider}
       />
-    </ColorModeContextProvider>
   );
 }
 
