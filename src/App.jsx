@@ -13,28 +13,32 @@ import "@pankod/refine-antd/dist/reset.css";
 import dataProvider from "@pankod/refine-simple-rest";
 import { AntdInferencer } from "@pankod/refine-inferencer/antd";
 import routerProvider from "@pankod/refine-react-router-v6";
-import LoginForm from "./pages/auth/LoginForm";
+import LoginPage from "./pages/auth/LoginPage";
 
 function App() {
   return (
-      <Refine
-        dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
-        notificationProvider={notificationProvider}
-        Layout={Layout}
-        ReadyPage={ReadyPage}
-        catchAll={<ErrorComponent />}
-        resources={[
+    <Refine
+      dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
+      notificationProvider={notificationProvider}
+      Layout={Layout}
+      ReadyPage={ReadyPage}
+      catchAll={<ErrorComponent />}
+      resources={[
+        {
+          name: "post",
+          list: AntdInferencer,
+        },
+      ]}
+      routerProvider={{
+        ...routerProvider,
+        routes: [
           {
-            name: "post",
-            list: AntdInferencer,
+            element: <LoginPage />,
+            path: "/auth/login",
           },
-          {
-            name: "Dashboard",
-            list: LoginForm,
-          },
-        ]}
-        routerProvider={routerProvider}
-      />
+        ],
+      }}
+    />
   );
 }
 
