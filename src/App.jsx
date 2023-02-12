@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 
 import { Refine } from "@pankod/refine-core";
 import {
@@ -14,6 +13,7 @@ import dataProvider from "@pankod/refine-simple-rest";
 import { AntdInferencer } from "@pankod/refine-inferencer/antd";
 import routerProvider from "@pankod/refine-react-router-v6";
 import LoginPage from "./pages/auth/LoginPage";
+import SignupPage from "./pages/auth/SignupPage";
 
 function App() {
   return (
@@ -35,6 +35,10 @@ function App() {
           {
             element: <LoginPage />,
             path: "/auth/login",
+          },
+          {
+            element: <SignupPage />,
+            path: "/auth/signup",
           },
         ],
       }}
