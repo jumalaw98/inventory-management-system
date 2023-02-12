@@ -3,7 +3,7 @@ import SignupForm from "../../components/auth/SignupForm";
 
 function SignupPage() {
   return (
-    <div className="bg-black h-screen w-full py-36">
+    <div className="bg-black h-screen w-full py-32">
       <SignupForm />
     </div>
   )

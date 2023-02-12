@@ -73,12 +73,12 @@ function LoginForm() {
                 <p>Forgot password</p>
               </div>
             </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full bg-blue-600 text-lg h-[44px] text-white my-5">Sign In</Button>
+            <Button type="submit" disabled={isSubmitting} className="w-full bg-blue-800 hover:bg-blue-600 text-lg h-[44px] text-white my-5">Sign In</Button>
             <div>
               <Button className="w-full h-[44px] bg-white font-semibold text-lg">Sign In with Google</Button>
             </div>
             <div className="text-center mt-5 text-lg">
-              <p>Don't have an account? <Link to="" className="text-blue-900">Sign up</Link></p>
+              <p>Don't have an account? <Link to="/auth/signup" className="text-blue-900">Sign up</Link></p>
             </div>
           </Form>
         )}

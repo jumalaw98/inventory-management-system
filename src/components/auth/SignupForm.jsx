@@ -4,16 +4,21 @@ import * as Yup from "yup";
 import { Button, Input } from "@pankod/refine-antd";
 import { Link } from "@pankod/refine-react-router-v6";
 
-// Validate the inputs:- Email and password with yup
-const LoginValidationSchema = Yup.object().shape({
+// Validate the inputs:- Name, Email and password with yup
+const SignupValidationSchema = Yup.object().shape({
+  name: Yup.string()
+  .required("Name is required"),
   email: Yup.string()
     .email("Invalid email address format")
     .required("Email is required"),
-  password: Yup.string().required("Password is required"),
+  password: Yup.string()
+  .min(8, "Password must be at least 8 characters")
+  .required("Password is required"),
 });
 
-// Default initials in the login fields
-const LoginInitialValues = {
+// Default initials in the signup fields
+const SignupInitialValues = {
+  name: "",
   email: "",
   password: "",
 };
@@ -22,8 +27,8 @@ function SignupForm() {
   return (
     <div className="w-[480px] bg-gray-200 px-10 py-6 rounded-lg mx-auto">
       <Formik
-        initialValues={LoginInitialValues}
-        validationSchema={LoginValidationSchema}
+        initialValues={SignupInitialValues}
+        validationSchema={SignupValidationSchema}
         // onSubmit={handleSubmit}
       >
         {({
@@ -37,8 +42,20 @@ function SignupForm() {
         }) => (
           <Form>
             <h3 className="text-center text-[47px] font-black font-sans" style={{fontFamily: "Gloria Hallelujah"}}>Inventory</h3>
-            <p className="text-center text-[30px] mb-3 font-normal">Log in to your account</p>
-            <p className="text-center mb-8 font-light text-gray-600">Welcome back! Please enter your details</p>
+            <p className="text-center text-[30px] mb-3 font-normal">Create an account</p>
+            <p className="text-center mb-8 font-light text-gray-600">Start your 30-day free trial.</p>
+            <div className="my-4">
+              <label htmlFor="name">Name</label>
+              <Input
+                name="name"
+                type="text"
+                required
+                className={
+                  "py-2 text-lg mt-2" + (errors.name && touched.name ? " is-invalid" : "")
+                }
+                placeholder="Enter your name"
+              />
+            </div>
             <div className="my-4">
               <label htmlFor="email">Email</label>
               <Input
@@ -63,22 +80,15 @@ function SignupForm() {
                 }
                 placeholder="Password"
               />
+              <p className="mt-2 font-light text-gray-600">Must be at leats 8 characters</p>
             </div>
-            <div className="flex justify-between text-lg">
-              <div className="">
-                <input name="remember" type="checkbox" className="mr-1" />
-                <label htmlFor="remember">Remember for 30 days</label>
-              </div>
-              <div>
-                <p>Forgot password</p>
-              </div>
-            </div>
-            <Button type="submit" disabled={isSubmitting} className="w-full bg-blue-600 text-lg h-[44px] text-white my-5">Sign In</Button>
+
+            <Button type="submit" disabled={isSubmitting} className="w-full bg-blue-800 hover:bg-blue-600 text-lg h-[44px] text-white my-5">Get started</Button>
             <div>
-              <Button className="w-full h-[44px] bg-white font-semibold text-lg">Sign In with Google</Button>
+              <Button className="w-full h-[44px] bg-white font-semibold text-lg">Sign up with Google</Button>
             </div>
             <div className="text-center mt-5 text-lg">
-              <p>Don't have an account? <Link to="" className="text-blue-900">Sign up</Link></p>
+              <p>Already have an account? <Link to="/auth/login" className="text-blue-900">Log in</Link></p>
             </div>
           </Form>
         )}
