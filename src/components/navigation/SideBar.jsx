@@ -11,7 +11,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 
 function Dashboard() {
   return (
-    <div className="border-2 border-green-300 h-screen w-[280px] text-2xl py-8 fixed">
+    <div className="border-r-2 border-gry-300 h-screen w-[280px] text-2xl py-8 fixed">
       <h3 className="text-[36px] mx-7 font-gloria">Inventory</h3>
       <div className="flex flex-col justify-between h-full bg-white mx-9 pb-12">
         <div>

@@ -14,7 +14,7 @@ import { AntdInferencer } from "@pankod/refine-inferencer/antd";
 import routerProvider from "@pankod/refine-react-router-v6";
 import LoginPage from "./pages/auth/LoginPage";
 import SignupPage from "./pages/auth/SignupPage";
-import DashboardPage from "./pages/navigation/DashboardPage";
+import DashboardPage from "./pages/navigation/NavigationPage";
 
 function App() {
   return (
