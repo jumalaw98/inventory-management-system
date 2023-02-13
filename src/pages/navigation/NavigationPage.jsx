@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../../components/navigation/NavBar";
 import Dashboard from "../../components/navigation/SideBar";
 
-function DashboardPage() {
+function NavigationPage() {
   return (
     <div className="flex">
       <Dashboard />
@@ -11,4 +11,4 @@ function DashboardPage() {
   )
 }
 
-export default DashboardPage;
+export default NavigationPage;

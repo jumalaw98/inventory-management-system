@@ -9,7 +9,7 @@ import StoreIcon from '@mui/icons-material/Store';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 
-function Dashboard() {
+function SideBar() {
   return (
     <div className="border-r-2 border-gry-300 h-screen w-[280px] text-2xl py-8 fixed">
       <h3 className="text-[36px] mx-7 font-gloria">Inventory</h3>
@@ -47,4 +47,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default SideBar;
