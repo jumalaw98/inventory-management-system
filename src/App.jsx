@@ -14,6 +14,7 @@ import { AntdInferencer } from "@pankod/refine-inferencer/antd";
 import routerProvider from "@pankod/refine-react-router-v6";
 import LoginPage from "./pages/auth/LoginPage";
 import SignupPage from "./pages/auth/SignupPage";
+import DashboardPage from "./pages/navigation/DashboardPage";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       catchAll={<ErrorComponent />}
       resources={[
         {
-          name: "post",
+          name: "dashboard",
           list: AntdInferencer,
         },
       ]}
@@ -39,6 +40,10 @@ function App() {
           {
             element: <SignupPage />,
             path: "/auth/signup",
+          },
+          {
+            element: <DashboardPage />,
+            path: "/dashboard",
           },
         ],
       }}
