@@ -3,7 +3,7 @@ import ReceiptIcon from "@mui/icons-material/Receipt";
 
 function Dashboard() {
   return (
-    <div className="flex w-full h-screen">
+    <div className="flex w-full h-full">
       <div className="w-3/5">
         <div className="border-2 border-blue-500 w-[96%] mx-auto my-4 rounded-lg bg-white shadow-xl">
           <p>Sales Overview</p>
