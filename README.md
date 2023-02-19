@@ -22,7 +22,7 @@
 
 ### Project Demo link
 
-If you deployed your project on any platform please write down the link here.
+To have a preview of [Inventory-Management-Syatem](https://inventory-management-system-vert.vercel.app/)
 
 ## About
 
@@ -31,19 +31,19 @@ In this section, give a description of what your submission is. What did you bui
 
 ### Participants
 
-- Chantelle Kyendereta  
+- Chantelle Kyendereta  Designer  
   [![Twitter](https://badgen.net/badge/icon/cckyendereta?icon=twitter&label)](https://twitter.com/cckyendereta)
   [![GitHub followers](https://img.shields.io/github/followers/kyendereta.svg?style=social&label=kyendereta&maxAge=2592000)](https://github.com/kyendereta)
-- Stanley Mayore  
+- Stanley Mayore  - Fullstack Dev  
   [![Twitter](https://badgen.net/badge/icon/MayoreStanley?icon=twitter&label)](https://twitter.com/cckyendereta)
   [![GitHub followers](https://img.shields.io/github/followers/Leestan360.svg?style=social&label=Leestan360&maxAge=2592000)](https://github.com/Leestan360)
-- Lawrence Juma  
+- Lawrence Juma  - Product Manager, Frontend Dev  
   [![Twitter](https://badgen.net/badge/icon/Jumalaw98?icon=twitter&label)](https://twitter.com/jumalaw98)
   [![GitHub followers](https://img.shields.io/github/followers/Jumalaw98.svg?style=social&label=Jumalaw98&maxAge=2592000)](https://github.com/jumalaw98)
-- Andisi Ambuku  
+- Andisi Ambuku  - Article Writer, Frontend Dev  
   [![Twitter](https://badgen.net/badge/icon/AndisiAmbuku?icon=twitter&label)](https://twitter.com/AndisiAmbuku)
   [![GitHub followers](https://img.shields.io/github/followers/andisiambuku.svg?style=social&label=andisiambuku&maxAge=2592000)](https://github.com/jumalaw98)
--  Elvis Mariga        
+-  Elvis Mariga  - Designer, frontend dev     
    [![Twitter](https://badgen.net/badge/icon/ElvisMariga1?icon=twitter&label)](https://twitter.com/ElvisMariga1)
    [![GitHub followers](https://img.shields.io/github/followers/elvmariga.svg?style=social&label=elvmariga&maxAge=2592000)](https://github.com/elvmariga)
 
