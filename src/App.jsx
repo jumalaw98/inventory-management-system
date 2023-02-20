@@ -14,6 +14,10 @@ import { AntdInferencer } from "@pankod/refine-inferencer/antd";
 import routerProvider from "@pankod/refine-react-router-v6";
 import LoginPage from "./pages/auth/LoginPage";
 import SignupPage from "./pages/auth/SignupPage";
+import NavigationPage from "./pages/navigation/NavigationPage";
+import DashboardPage from "./pages/dashboard/DashboardPage";
+import InventoryPage from "./pages/inventory/InventoryPage";
+import ReportsPage from "./pages/reports/ReportsPage";
 
 function App() {
   return (
@@ -25,7 +29,7 @@ function App() {
       catchAll={<ErrorComponent />}
       resources={[
         {
-          name: "post",
+          name: "home",
           list: AntdInferencer,
         },
       ]}
@@ -39,6 +43,22 @@ function App() {
           {
             element: <SignupPage />,
             path: "/auth/signup",
+          },
+          {
+            element: <NavigationPage />,
+            path: "/home",
+          },
+          {
+            element: <DashboardPage />,
+            path: "/dashboard",
+          },
+          {
+            element: <InventoryPage/>,
+            path: "/inventory",
+          },
+          {
+            element: <ReportsPage/>,
+            path: "/reports",
           },
         ],
       }}
