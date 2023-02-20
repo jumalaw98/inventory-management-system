@@ -9,7 +9,7 @@ const InventoryPage = () => {
         <OverallInventory />
       </div>
       <div className="border-1">
-        {" "}
+       
         <Products />
       </div>
     </div>
