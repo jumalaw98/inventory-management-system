@@ -16,30 +16,54 @@ function SideBar() {
       <div className="flex flex-col justify-between h-full bg-white mx-9 pb-12">
         <div>
           <div className="my-6">
-            <NavLink to="/dashboard"><HomeOutlined className="mr-2"/><span>Dashboard</span></NavLink>
+            <NavLink to="/dashboard">
+              <HomeOutlined className="mr-2" />
+              <span>Dashboard</span>
+            </NavLink>
           </div>
           <div className="my-6">
-            <NavLink to=""><ShoppingCartCheckoutIcon className="mr-2"/>Inventory</NavLink>
+            <NavLink to="/inventory">
+              <ShoppingCartCheckoutIcon className="mr-2" />
+              Inventory
+            </NavLink>
           </div>
           <div className="my-6">
-            <NavLink to=""><AssessmentRoundedIcon className="mr-2" />Reports</NavLink>
+            <NavLink to="">
+              <AssessmentRoundedIcon className="mr-2" />
+              Reports
+            </NavLink>
           </div>
           <div className="my-6">
-            <NavLink to=""><AccountCircleRoundedIcon className="mr-2" />Suppliers</NavLink>
+            <NavLink to="">
+              <AccountCircleRoundedIcon className="mr-2" />
+              Suppliers
+            </NavLink>
           </div>
           <div className="my-6">
-            <NavLink to=""><AddShoppingCartRoundedIcon className="mr-2"/>Orders</NavLink>
+            <NavLink to="">
+              <AddShoppingCartRoundedIcon className="mr-2" />
+              Orders
+            </NavLink>
           </div>
           <div className="my-6">
-            <NavLink to=""><StoreIcon className="mr-2"/>Manage Store</NavLink>
+            <NavLink to="">
+              <StoreIcon className="mr-2" />
+              Manage Store
+            </NavLink>
           </div>
         </div>
         <div>
           <div className="my-6">
-            <NavLink to=""><SettingsIcon className="mr-2"/>Settings</NavLink>
+            <NavLink to="">
+              <SettingsIcon className="mr-2" />
+              Settings
+            </NavLink>
           </div>
           <div className="my-6">
-            <NavLink to=""><LogoutIcon className="mr-2" />Logout</NavLink>
+            <NavLink to="">
+              <LogoutIcon className="mr-2" />
+              Logout
+            </NavLink>
           </div>
         </div>
       </div>

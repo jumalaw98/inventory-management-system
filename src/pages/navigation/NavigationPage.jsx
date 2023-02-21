@@ -7,12 +7,9 @@ function NavigationPage() {
   return (
     <div className="flex">
       <Dashboard />
-      <div className="ml-[280px] w-full">
-        <NavBar />
-        <DashboardPage />
-      </div>
+      <NavBar />
     </div>
-  );
+  )
 }
 
 export default NavigationPage;
