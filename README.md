@@ -127,7 +127,13 @@ The following are the steps involved in the inclusive design process of the inve
 
 The inclusive design process used in creating the inventory app involved considering the needs and requirements of a wide range of users, and ensuring that everyone can benefit from the product, regardless of their physical, cognitive, or sensory abilities. By conducting user research, defining user personas, and conducting accessibility and usability testing, we were able to create an app that is accessible and usable for all users.
 
+## Contributors 
 
+<a href="https://github.com/jumalaw98/inventory-management-system/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jumalaw98/inventory-management-system" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 
 [Reference Readme](https://github.com/refinedev/refine/blob/next/hackathon/hackathon-january.md) Guide 
